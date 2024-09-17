@@ -1,0 +1,435 @@
+:root {
+    --text1-color: #fff; 
+    --text2-color: #14105B; 
+    --bg-color:#eee;
+    --nav-color: linear-gradient(89.7deg, rgb(95, 4, 118) 5.7%, rgba(214,91,0,1) 15.1%, rgba(233,245,0,1) 29.5%, rgba(23,255,17,1) 45.8%, rgba(29,255,255,1) 61.5%, rgba(5,17,255,1) 76.4%, rgba(223,0,0,1) 92.4%);
+    --hover-color: orangered;
+}
+*{
+    padding: 0; margin: 0;
+    outline: none; border: none;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: capitalize;
+    transition: all 0.5s ease-in-out;
+    cursor: url(../img/logo/cursor1.cur),auto;
+}
+*:hover{
+    color: var(--hover-color);
+}
+body{
+    min-height: 100vh;
+    max-width: 100%;
+}
+header{
+    position: relative;
+    height: 80vh;
+    width: 100%;
+    background: url(../img/background/headerpage1.jpg) 100% 100%;
+    background-size: cover;
+    background-position: center left;
+    z-index: 1000;
+}
+nav{
+    position: fixed;
+    display: flex;
+    height: 10vh;         
+    width: 100%;
+    align-items: center;
+    z-index: 1;
+}
+nav::before {
+    position: absolute;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: var(--nav-color) ;
+    filter: opacity(0.8);
+    z-index: -1;
+}
+nav #logo{
+    height: 100%;
+    width: 35%;
+    cursor: pointer;
+    margin-left: 50%;
+    z-index: 1;
+}
+.company-name{
+    font-size: 3.4vmin;
+    font-weight: 800;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    cursor: pointer;        
+        &:hover{
+        color: var(--hover-color);
+        }
+}
+
+.head-item1{
+    display: inline-flex;
+    width: 6%;
+}
+.head-item2{
+    display: inline-flex;
+    width: 10%;
+    color: #fff;
+}
+.head-item3{
+    display: inline-flex;
+    width: 60%;
+}
+.head-item4{
+    display: inline-flex;
+    width:20%;
+    height: 50%;
+    position: relative;
+}
+.head-item5{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 5%;
+}
+.nav-ul{ 
+    display: inline-flex;
+    justify-content: space-between ;  
+    width: 100%;
+}
+.nav-ul>li{
+    list-style: none;
+    margin: auto 20px;
+}
+a{  
+    text-decoration: none;
+    color: #fff;
+    font-size: 3vmin;
+    font-weight: 600;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    cursor: pointer;
+}
+a.active{
+    color:var(--hover-color);
+}
+.nav-ul li a:hover{
+    color: var(--hover-color);
+    padding: 10px 0;
+    border-top: 5px blue solid;
+    border-bottom: 5px blue solid;
+    border-radius: 50%;
+}
+input[id="search-bar"]{
+    border-radius: 10px;
+    width: 100%;
+    padding-left: 10%;
+    font-size: 3vmin;
+    border: 1px gray solid;
+}
+.bx-x{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 1%;
+    font-size: 4vmin;
+    cursor: pointer;
+    color: gray;
+        &:hover{
+            color: var(--hover-color);
+        }
+}
+.bx-search{
+    font-size: 4vmin;
+    cursor: pointer;
+    color: #fff;
+        &:hover{
+            color: var(--hover-color);
+        }
+}
+.srch-btn{
+    position: absolute;
+    right: 0;
+    width: 12%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: blue;
+    border-radius: 0 10px 10px 0;
+}
+/* Start of aside bar */
+.toggle{
+    position: relative;
+    background: conic-gradient(red, yellow, green, blue, orange, purple);
+    width: 60%;
+    height: 60%;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.88);
+    border: #fff 1px solid;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 2;
+}
+.toggle span{
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background: #1863ff;
+    border-radius: 4px;
+    transition: 0.5s;
+    left: 20%;
+    border: #fff 1px solid;
+}
+.toggle span:nth-child(1){
+    transform:translateY(-13px);
+    width: 60%;
+}
+.toggle.active span:nth-child(1){
+    width: 85%;
+    transform: translateY(0px) rotate(45deg);
+    left: 3px;
+}
+.toggle span:nth-child(2){
+    transform: translateY(13px);
+    width: 35%;
+}
+.toggle.active span:nth-child(2){
+    width: 85%;
+    transform: translateY(0px) rotate(-45deg);
+    left: 3px;
+}
+.toggle.active span:nth-child(3){
+    transform: translateX(500px);
+}
+.tab>li{
+    position: relative;
+    width: 100%;
+    height: 18vh;
+    border: 3px #fff solid;
+    text-align: center;
+    line-height: 20vh;
+    color: #fff;
+        &:hover{
+            background: var(--nav-color);
+            border: 3px #000 solid;
+            transition: all 0.3s ease-in-out ;
+        }
+}
+.tab li a:hover{
+    color: var(--hover-color);
+    padding: 10px 0;
+    border-top: 5px blue solid;
+    border-bottom: 5px blue solid;
+    border-radius: 50%;
+}
+.bxs-chevrons-right {
+    position: absolute;
+    top: 40%;
+    right: 0;
+    color: var(--text1-color);     
+    margin-right: calc(100% - 90%);
+    font-size: 5vmin;
+    cursor: pointer;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.bxs-chevrons-right:hover {     
+    color: var(--hover-color);
+}
+.leftbar{
+    position: absolute;
+    top: 10vh;
+    left: 0;
+    width: 30%;
+    height: 90vh;
+    left: -100%;
+    z-index: 1;
+}
+.leftbar::before {
+    position: absolute;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url(../img/background/9050347.jpg) ;
+    filter: opacity(0.8);
+    z-index: -1;
+}
+#checkbox:checked ~ .leftbar{
+    left: 0;
+}
+/* Start of aside bar */
+.section-area{
+    padding: 3rem 9%;
+}
+.main{
+    margin: 0 auto;
+    height: 100vh;
+    width: 80%;
+    background: #000;
+}
+
+
+
+
+
+
+
+/* *****START footer***** */
+.footer{
+    height: 37vh;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    /* padding: 4rem; */
+    background: var(--nav-color);
+}
+.footer .content{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+.footer .content div{
+    position: relative;
+    justify-content: center;
+    width: 100%;
+}
+.content .logo{
+    position: absolute;
+    top: 30%;
+    left: 35%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+.footer h3{
+    font-size: 4.5vmin;
+    margin: 1rem 0;
+    color: var(--text1-color);
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+        &:hover{
+            color: var(--hover-color);
+        }
+}
+.footer a{
+    display: inline-flex;
+    font-size: 2rem;
+    margin: 0.5rem;
+}
+.contact{
+    width: 100%;
+    height: 15vh;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.contact div i{
+    font-size: 6.5vmin;
+    cursor: pointer;
+    margin: 0.5rem 0.5rem;
+        &:hover{
+            background: var(--hover-color);
+            border-radius: 50%;
+        }
+}
+/* *****END footer***** */
+/* *****START whatsapp***** */
+.whatsapp{
+    position: fixed;
+    right: 30px;
+    bottom: 40px;
+    padding: 35px;
+    z-index: 1;
+}
+.whatsapp .whatsapp-btn{
+    font-size: 8vmin;
+    color: #00ff00;
+}
+.bxl-whatsapp {
+    cursor: pointer;
+}
+.whatsapp span{
+    position: absolute;
+    bottom: 15px;
+    right: 20px;
+    font-size: 3vmin;
+    font-weight: 800;
+    color: #00ff00;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+/* *****END whatsapp***** */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px){
+/* *****START of Header***** */
+.head-item3{
+    display: none;
+}
+.head-item1{
+    width: 10%;
+}
+.head-item2{
+    width: 20%;
+}
+.head-item4{
+    height: 40%;
+    width: 55%;
+    z-index: -1;
+}
+.head-item5{
+    margin-right: 0;
+    width: 10%;
+}
+a{
+    font-size: 4.5vmin;
+    font-weight: 800;
+    letter-spacing: 10px;
+}
+#logo{
+    margin-left: 25%;
+    height: 100%;
+    width: 80%;
+}
+.company-name{
+    margin-left: 20px;
+    font-size: 4vmin;
+}
+.toggle{
+    left: 10px;
+    height: 45%;
+    width: 100%;
+    /* left: 30px; */
+    /* right: 0; */
+}
+.leftbar{
+position: absolute;
+top: 10vh;
+left: 0;
+width: 100%;
+height: 90vh;
+left: -100%;
+z-index: 1;
+}
+/* *****START of Header***** */
+
+/* *****START of Footer***** */
+/* *****START of Footer***** */
+}
