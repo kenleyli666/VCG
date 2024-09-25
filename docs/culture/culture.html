@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="酒店,機票,自由行套票,酒店預訂,訂房,機票預訂,機票查詢,火車票,中國旅遊,旅遊,旅遊網, Trip.com">
+    <title>天天旅遊 Daily Travel</title>
+    <!-- Boxicons Icon -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- My Style Css-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="../img/logo/favicon.png">
+</head>
+<body> 
+    <!-- * *****START of Header***** * -->
+    <header>
+    <nav>
+      
+    <div class="head-item1">
+        <a href="#footer">
+        <img id="logo" src="../img/logo/favicon.png" alt="This is the company logo">
+        </a>            
+    </div>
+
+    <div class="head-item2">
+        <a href="https://project-970.pages.dev/culture/culture"><h1 class="company-name">Daily Travel</h1></a>
+    </div>
+
+    <div class="head-item3">
+    <ul class="nav-ul">
+    <li><a href="../index.html" class="active">首頁</a></li>
+    <li><a href="#">當地文化歷史</a></li>
+    <li><a href="../world attractions/worldAttractions.html">世界四大遺蹟</a></li>
+    <li><a href="../travel info/travelinfo.html">旅遊資訊</a></li>
+    <li><a href="../hotel/hotel.html">機票/酒店</a></li>
+    </ul>
+    </div>
+
+    <div class="head-item4">
+        <form action="https://www.google.com/search" method="get">
+        <button class="srch-btn" type="submit"> 
+            <i class='bx bx-search'></i>
+        </button>
+        <input id="search-bar" placeholder="搜尋..." autocomplete="on" name="q">
+        <i class='bx bx-x'></i>
+        </form> 
+    </div>
+
+    <div class="head-item5">
+        <input type="checkbox" id="checkbox" style="display: none;">
+        <label for="checkbox" class="toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <div class="leftbar">         
+            <ul class="tab">
+                <li><a href="../index.html" class="active">首頁</a><i class='bx bxs-chevrons-right bx-fade-left' ></i></li>
+                <hr style=" width: 100%; height: 1px;">
+                <li><a href="#">當地文化歷史</a><i class='bx bxs-chevrons-right bx-fade-left' ></i></li>
+                <hr style=" width: 100%; height: 1px;">
+                <li><a href="../world attractions/worldAttractions.html">世界四大遺蹟</a><i class='bx bxs-chevrons-right bx-fade-left' ></i></li>
+                <hr style=" width: 100%; height: 1px;">
+                <li><a href="../travel info/travelinfo.html">旅遊資訊</a><i class='bx bxs-chevrons-right bx-fade-left' ></i></li>
+                <hr style=" width: 100%; height: 1px;">
+                <li><a href="../hotel/hotel.html">機票/酒店</a><i class='bx bxs-chevrons-right bx-fade-left' ></i></li>
+            </ul>
+        </div>
+    </div>
+    </nav>
+    <div class="text-container">
+        <div>文化與歷史</div>
+        <div>華夏文化</div>
+        <div>印加文明</div>
+        <div>古埃及文明</div>
+        <div>高綿佛教文化</div>
+    </div>
+    <audio id="background-audio" src="../audio/galactic-space-journey.mp3" loop></audio>
+    <button id="play-button" class="play">播放</button>
+    </div>
+    </header>
+    <!-- * *****END of Header***** * -->
+
+    <!-- * *****Start of Section One***** * -->
+
+    <section class="sectionOne">
+        <img class="banner" src="../img/carousel/banner.jpg" alt="this is banner">
+        <div class="main">
+            <button onclick="document.querySelector('.myLink1').click();"><img src="../img/logo/map-marker.svg" alt=""><a class="myLink1" href="../index.html#map-end">目的地</a></button>
+            <button onclick="document.querySelector('.myLink2').click();"><img src="../img/logo/self-travel1.png" alt=""><a class="myLink2" href="../world attractions/worldAttractions.html#attractions">自由行</a></button>
+            <button onclick="document.querySelector('.myLink3').click();"><img src="../img/logo/air-tickets.svg" alt=""><a class="myLink3" href="../hotel/hotel.html#flight">機票</a></button>
+            <button onclick="document.querySelector('.myLink4').click();"><img src="../img/logo/hotel.png" alt=""><a class="myLink4" href="../hotel/hotel.html#hotel">酒店</a></button>
+            <button onclick="document.querySelector('.myLink5').click();"><img src="../img/logo/passport.png" alt=""><a class="myLink5" href="../travel info/travelinfo.html#visa-passport">簽證</a></button>
+        </div>
+    </section>
+    <!-- * *****End of Section One***** * -->
+
+    <!-- * *****Start of Section Two***** * -->
+    <section class="sectionTwo section-area" id="history">
+        <h1>各地文化與歷史</h1>
+        <div class="main">
+             <!-- button part one-->
+            <div class="bnt-container">
+                <button class="btn-1">中國</button>
+                <button class="btn-2">秘魯</button>
+                <button class="btn-3">埃及</button>
+                <button class="btn-4">柬埔寨</button>
+            </div>
+
+            <!-- conten part two -->
+            <div class="content-contral1">
+                <div class="text content1">
+                    <img src="../img/background/china-history.jpg" alt="">
+                </div>
+                    
+                <div class="text content2">
+                    <img src="../img/background/peru-history.jpg" alt="">
+                </div>
+                
+                <div class="text content3">
+                    <img src="../img/background/egypt-history.jpg" alt="">
+                </div>
+
+                <div class="text content4">
+                    <img src="../img/background/cambodia-history.jpg" alt="">
+                </div>
+            </div>
+
+            </div>
+
+            <!-- conten part three -->
+            <div class="content-contral2">
+                    <div class="text content5">
+                        <div ><p class="" style="color: blue;">文化背景： 中國文化以儒家思想為核心，融合道教和佛教，強調家庭、教育、禮儀和社會和諧。</p></div>
+                        <div ><p class="" style="color: black;">歷史背景： 中國歷史悠久，從夏商周到現代，經歷多次朝代更替和文化融合，形成豐富多彩的歷史。</p></div>
+                    </div>
+                        
+                    <div class="text content6">
+                        <div ><p class="" style="color: blue;">文化背景： 秘魯文化融合了印加文明和西班牙殖民文化，擁有豐富的藝術、音樂和美食傳統。</p></div>
+                        <div ><p class="" style="color: black;">歷史背景： 秘魯是印加帝國的中心，16世紀被西班牙征服，1821年獨立，經歷了多次政治變革。</p></div>
+                    </div>
+                    
+                    <div class="text content7">
+                        <div ><p class="" style="color: blue;">文化背景： 埃及文化以古埃及文明為基礎，擁有豐富的藝術、建築和宗教傳統，影響深遠。</p></div>
+                        <div ><p class="" style="color: black;">歷史背景： 埃及擁有超過5000年的歷史，從古埃及法老時代到現代，經歷了多次外來統治和文化融合。</p></div>
+                    </div>
+
+                    <div class="text content8">
+                        <div ><p class="" style="color: blue;">文化背景： 柬埔寨文化深受高棉帝國影響，擁有獨特的舞蹈、音樂和宗教藝術，特別是吳哥窟。</p></div>
+                        <div ><p class="" style="color: black;">歷史背景： 柬埔寨歷史悠久，高棉帝國時期是其黃金時代，後來經歷了法國殖民統治和內戰。</p></div>
+                    </div>
+            </div>
+        </div>
+     </section>
+    <!-- * *****End of Section Two***** * -->
+
+    <!-- * *****Start of Footer***** * -->
+    <section id="footer">
+        <footer class="footer">
+            <div class="content">
+                <div >
+                <a href="#">
+                    <img class="logo" src="../img/logo/favicon.png" alt="This is the company logo">
+                </a>   
+                <h3 >天天旅遊 Daily Travel</h3>             
+                </div>
+                <p style="color: #fff; font-size: 3.4vmin; font-weight: 800; margin: 10px 0 10px  0; letter-spacing: 5px;">「從這裡出發，探索世界的每一個驚喜角落!」</p>
+                <div class="social-media">
+                    <p class="callus" style="font-size: 3vmin; font-weight: 600; letter-spacing: 3px;  text-decoration: underline;">聯絡我們:</p>
+                    <div>
+                    <a href="https://project-970.pages.dev/travel%20info/travelinfo#contact"><i class='bx bxl-facebook-circle bx-tada' style="color: rgb(0, 106, 255);"></i></a>
+                    <a href="https://project-970.pages.dev/travel%20info/travelinfo#contact"><i class='bx bxl-instagram-alt bx-tada' style="color: rgb(255, 0, 200);"></i></a>
+                    <a href="https://project-970.pages.dev/travel%20info/travelinfo#contact"><i class='bx bxl-youtube bx-tada' style="color: rgb(255, 0, 0);"></i></a>
+                    <a href="https://project-970.pages.dev/travel%20info/travelinfo#contact"><i class='bx bxl-twitter bx-tada' style="color: rgb(7, 187, 203);"></i></a>
+                    <hr style="width: 35%; height: 2px; background: #fff; margin: 0 auto;">
+                    </div>
+                    <div style="display: inline-flex; align-items: center; justify-content: space-around; margin-bottom: 0.5rem;">
+                    <a href="../policy/policy.html" style="font-size: 3vmin;">私隱政策</a>
+                    <p style="font-size: 3vmin;">&copy; 2024 All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </section>
+    <!-- * *****END of Footer***** * -->
+
+    <!-- * *****START of Whatsapp & ScrollTop***** * -->
+    <section>
+    <div class="whatsapp">
+        <a href="https://wa.me/62570155" class="whatsapp-btn"><i class='bx bxl-whatsapp bx-burst'></i></a>
+        <span>歡迎查詢</span>
+    </div>
+
+
+    <div class="scroll-to-top" style="bottom: 7.5%;">
+        <span>
+            <svg width="24" height="24" viewBox="0 0 48 48" fill="none">
+                <path d="M9 8L39 8" stroke="#212121" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M24 43L24 16" stroke="#212121" stroke-width="3.6" stroke-linecap="round"></path>
+                <path d="M12 26L24 15L30 20.5L36 26" stroke="#212121" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </span>
+    </div>
+    </section>
+    <!-- * *****END of Whatsapp & ScrollTop***** * -->
+
+
+    <script>
+        document.querySelectorAll('.sectionTwo button p').forEach(function(p) {
+            p.style.animation = 'rotateX 1s linear infinite';
+        });
+    </script>
+    <script src="../script.js"></script>
+    <script src="./culturescript.js"></script>
+    <script src="../all javascript/scroll-to-top.js"></script>
+</body>
+</html>

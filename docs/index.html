@@ -3,625 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="中小企">
-    <meta name="keywords" content="借錢,借貸,money">
-    <meta name="author" content="vcg">
-    <link rel="icon" type="image/x-icon" href="./img/logo/newlogoico.ico" font-size="50px">
-    <!--font-awesome css-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
-    <!--swiper css-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
-    <!-- boxicons css-->
+    <meta name="keywords" content="酒店,機票,自由行套票,酒店預訂,訂房,機票預訂,機票查詢,火車票,中國旅遊,旅遊,旅遊網, Trip.com">
+    <title>天天旅遊 Daily Travel</title>
+    <!-- Boxicons Icon -->
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <!--my css-->
-    <link rel="stylesheet" href="./css/style.css">
-    <title>創健佳商業事務所</title>
+    <!-- My Style Css-->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" type="image/x-icon" href="./img/logo/favicon.png">
 </head>
-<body>
-    <!--***************Start header***************-->
-    <section class="nav-container">
-    <div class="webtop">
-    <div class="top-line"></div>
+<body> 
+    <!-- * *****START of Header***** * -->
+    <header>
+    <nav>
+      
+    <div class="head-item1">
+        <a href="#footer">
+        <img id="logo" src="./img/logo/favicon.png" alt="This is the company logo">
+        </a>            
     </div>
-    <header class="header">
-        <div class="header-main">
-        <label class="logo">
+
+    <div class="head-item2">
+        <a href="https://project-970.pages.dev/"><h1 class="company-name">Daily Travel</h1></a>
+    </div>
+
+    <div class="head-item3">
+    <ul class="nav-ul">
+    <li><a href="#" class="active">首頁</a></li>
+    <li><a href="./culture/culture.html">當地文化歷史</a></li>
+    <li><a href="./world attractions/worldAttractions.html">世界四大遺蹟</a></li>
+    <li><a href="./travel info/travelinfo.html">旅遊資訊</a></li>
+    <li><a href="./hotel/hotel.html">機票/酒店</a></li>
+    </ul>
+    </div>
+
+    <div class="head-item4">
+        <form action="https://www.google.com/search" method="get">
+        <button class="srch-btn" type="submit"> 
+            <i class='bx bx-search'></i>
+        </button>
+        <input id="search-bar" placeholder="搜尋..." autocomplete="on" name="q">
+        <i class='bx bx-x'></i>
+        </form> 
+    </div>
+
+    <div class="head-item5">
+        <input type="checkbox" id="checkbox" style="display: none;">
+        <label for="checkbox" class="toggle">
             <span></span>
-            <div class="com-icon"><img src="./img/logo/mylogo1.png" alt=""></div>
-            <a href="#home" class="com-name">創健佳商業事務所</a> 
-            <span></span>                                       
+            <span></span>
+            <span></span>
         </label>
 
-        <nav class="navbar-one">
-            <ul>
-                <li><a href="#home" class="active nav1-link">首頁</a></li>
-                <li><a href="#partner" class="nav1-link">合作伙伴</a></li>
-                <li><a href="#smeloan" class="nav1-link">中小企政府資助</a></li>
-                <li><a href="#ploan" class="nav1-link">私人貸款</a></li>
-                <li><a href="#team" class="nav1-link">業主貸款</a></li>
-                <li><a href="#blog" class="nav1-link">最新消息</a></li>
-                <li><a href="../aboutus/aboutus.html" class="nav1-link">關於創健佳</a></li>
-                <li><a href="../loancalculator/loancalc.html" class="nav1-link">計算機</a></li>
-            </ul>             
-        </nav>
-
-        <nav class="navbar-two">
-            <ul>
-                <li><a href="#home" class="active nav2-link">首頁</a><i class="active fa-solid fa-chevron-right"></i><hr></li>            
-                <li><a href="#partner" class="nav2-link">合作伙伴</a><i class="fa-solid fa-chevron-right"></i><hr></li>
-                <li><a href="#smeloan" class="nav2-link">中小企政府資助</a><i class="fa-solid fa-chevron-right"></i></i><hr></li>
-                <li><a href="#ploan" class="nav2-link">私人貸款</a><i class="fa-solid fa-chevron-right"></i><hr></li>
-                <li><a href="#team" class="nav2-link">業主貸款</a><i class="fa-solid fa-chevron-right"></i><hr></li>
-                <li><a href="#blog" class="nav2-link">最新消息</a><i class="fa-solid fa-chevron-right"></i><hr></li>
-                <li><a href="../aboutus/aboutus.html" class="nav2-link">關於創健佳</a><i class="fa-solid fa-chevron-right"></i><hr></li>
-                <li><a href="../loancalculator/loancalc.html" class="nav2-link">計算機</a><i class="fa-solid fa-chevron-right"></i><hr></li>                            
+        <div class="leftbar">         
+            <ul class="tab">
+                <li><a href="#" class="active">首頁</a><i class='bx bxs-chevrons-right bx-fade-left' ></i></li>
+                <hr style=" width: 100%; height: 1px;">
+                <li><a href="./culture/culture.html">當地文化歷史</a><i class='bx bxs-chevrons-right bx-fade-left' ></i></li>
+                <hr style=" width: 100%; height: 1px;">
+                <li><a href="./world attractions/worldAttractions.html">世界四大遺蹟</a><i class='bx bxs-chevrons-right bx-fade-left' ></i></li>
+                <hr style=" width: 100%; height: 1px;">
+                <li><a href="./travel info/travelinfo.html">旅遊資訊</a><i class='bx bxs-chevrons-right bx-fade-left' ></i></li>
+                <hr style=" width: 100%; height: 1px;">
+                <li><a href="./hotel/hotel.html">機票/酒店</a><i class='bx bxs-chevrons-right bx-fade-left' ></i></li>
             </ul>
-        </nav>
-        <!-- search-btns -->
-        <div class="search-btns">
-        <i class="fa-solid fa-magnifying-glass" id="glass-btn"></i>
         </div>
-        <!-- /search-btns -->
-
-        <!-- control-btns -->
-        <div class="control-btns">
-        <!--burger btn-->
-        <i class="bx bx-menu-alt-right" id="burger-btn"></i>
-        <!--cross btn-->
-        <i class="fa-solid fa-circle-xmark" id="cross-btn"></i>
-        </div>
-        <!-- /control-btns -->
-        </div>
+    </div>
+    </nav>
+    <div class="text-container">
+        <div>四大熱門旅遊國家</div>
+        <div>中國</div>
+        <div>秘魯</div>
+        <div>埃及</div>
+        <div>柬埔寨</div>
+    </div>
+    <audio id="background-audio" src="./audio/galactic-space-journey.mp3" loop></audio>
+    <button id="play-button" class="play">播放</button>
     </header>
-    </section>
-    <!--***************End header***************-->
-    <!--***************Start home***************-->
-    <section>
-    <div class="home" id="home">
-        <div class="swiper home-slider">
-            <div class="swiper-wrapper">
+    <!-- * *****END of Header***** * -->
 
-                <div class="swiper-slide box">
-                    <div class="image img1">
-                        <img src="" alt="">
-                    </div>
-                    <div class="content ">
-                        <h3>達成財務目標的最佳方案！</h3> 
-                        <p>為中小企業提供靈活的融資方案，滿足私人貸款和業主貸款需求。</p>
-                        <p>中小企百分百擔保特惠貸款、政府八成擔保貸款、政府九成擔保貸款</p>
-                        <a href="../stepform/stepform.html" class="btn">get start</a>
-                    </div>
-                </div>
-
-                <div class="swiper-slide box">
-                    <div class="image img2">
-                        <img src="" alt="">                         
-                    </div>
-                    <div class="content">
-                        <h3>財務支援，助您實現夢想！</h3>
-                        <p>提供定制的中小企融資貸款、私人貸款和業主貸款方案，助您實現個人和企業的財務目標。</p>
-                        <a href="../stepform/stepform.html" class="btn">get start</a>
-                    </div>                    
-                </div>
-
-                <div class="swiper-slide box">
-                    <div class="image img3">
-                        <img src="" alt="">
-                    </div>
-                    <div class="content">
-                        <h3> 解決您的財務瓶頸！</h3>
-                        <p>專注於中小企業融資貸款、私人貸款和業主貸款，我們為您提供最佳的財務解決方案。</p>
-                        <a href="../stepform/stepform.html" class="btn">get start</a>
-                    </div>                    
-                </div>
-
-            </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div> 
-          </div>
-    </div>
-    </section>
-    <!--***************End home***************-->
-    <!--***************Start partner***************-->
-    <section class="partner section-area" id="partner">
-        <div class="heading">
-            <div class="brands"><h2 data-text="誠邀合作伙伴">誠邀合作伙伴</h2></div>
-            <div class="underline"></div>
+    <!-- * *****Start of Section One***** * -->
+    <section class="sectionOne">
+        <img class="banner" src="./img/carousel/banner.jpg" alt="this is banner">
+        <div class="main">
+            <button onclick="document.querySelector('.myLink1').click();"><img src="./img/logo/map-marker.svg" alt=""><a class="myLink1" href="#map-end">目的地</a></button>
+            <button onclick="document.querySelector('.myLink2').click();"><img src="./img/logo/self-travel1.png" alt=""><a class="myLink2" href="./world attractions/worldAttractions.html#attractions">自由行</a></button>
+            <button onclick="document.querySelector('.myLink3').click();"><img src="./img/logo/air-tickets.svg" alt=""><a class="myLink3" href="./hotel/hotel.html#flight">機票</a></button>
+            <button onclick="document.querySelector('.myLink4').click();"><img src="./img/logo/hotel.png" alt=""><a class="myLink4" href="./hotel/hotel.html#hotel">酒店</a></button>
+            <button onclick="document.querySelector('.myLink5').click();"><img src="./img/logo/passport.png" alt=""><a class="myLink5" href="./travel info/travelinfo.html#visa-passport">簽證</a></button>
         </div>
-
-    <div class="row">
-        <div class="swiper partner-slider">
-            <div class=" swiper-wrapper">
-                
-                <div class="swiper-slide box">
-                    <div class="image-box">
-                        <img src="./img/blog/1.jpg" alt="image" class="hidden-rotate fly-time">
-                    </div>
-                    <div class="content">
-                        <h3>個人合作夥伴佳選 • 中小企融資首選</h3>
-                        <p>新創公司、小型企業、創業家或擴大業務的公司。</p>
-                        <a href="#" class="btn">read more</a>
-                    </div>
-                </div>
-
-                <div class="swiper-slide box">
-                    <div class="image-box">
-                        <img src="./img/blog/2.jpg" alt="image" class="hidden-rotate fly-time">
-                    </div>
-                    <div class="content">
-                        <h3>融資助力 • 共享成功 • 一起成長</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="btn">read more</a>
-                    </div>
-                </div>
-
-                <div class="swiper-slide box">
-                    <div class="image-box">
-                        <img src="./img/blog/3.jpg" alt="image" class="hidden-rotate fly-time">
-                    </div>
-                    <div class="content">
-                        <h3>公司合作夥伴 • 開啟商機 • 共同擴大市場</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                        <a href="#" class="btn">read more</a>
-                    </div>
-                </div>
-
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </div>
     </section>
-    <hr>
-    <!--***************End partner***************-->
-    <!--***************Start smeloan***************-->
-    <section class="smeloan section-area" id="smeloan">
-        <div class="heading">
-            <h2 data-text="中小企政府資助">中小企政府資助</h2>
-            <div class="underline"></div>
-        </div>
+    <!-- * *****END of Section One***** * -->
+
+     <!-- * *****Start of Section Two***** * -->
+    <section class="sectionTwo section-area" id="map-end">
+        <h1>四大熱門旅遊國家</h1>
+        <div class="main">
+            <div class="row">
+
+                        <div class="box">
+                            <div class="image-box">
+                                <img src="./img/background/china.webp" alt="China">
+                            </div>
+                            <div class="content">
+                                <h3>中國</h3>
+                                <p>美食之旅：品嚐各地風味，從北京烤鴨到四川火鍋。</p>
+                                <a href="./culture/culture.html#history" class="btn">了解更多</a>
+                            </div>
+                        </div>
         
-        <div class="row">
-            <div class="swiper smeloan-slider">
-                <div class=" swiper-wrapper">
-
-                    <div class="box hidden-left fly-time swiper-slide">
-                        <i class="fa-solid fa-briefcase"></i>
-                        <h3>
-                            八成信貸擔保產品
-                        </h3>
-                        <p>-申請期:至2024年3月底</p>
-                        <p>-最高貸款額:1800萬港元</p>
-                        <p>-最長貸款擔保期:7年</p>
-                        <p>-年利率:3-5%</p>
-                        <p>-申請資格:在香港註冊及已營運最少12個月</p>
-                    </div>
-
-                    <div class="box hidden-left fly-time swiper-slide">
-                        <i class="fa-solid fa-clipboard-check"></i>
-                        <h3>
-                            九成信貸擔保產品
-                        </h3>
-                        <p>-申請期:至2024年3月底</p>
-                        <p>-最高貸款額:800萬港元</p>
-                        <p>-最長貸款擔保期:5年</p>
-                        <p>-年利率:3-5%</p>
-                        <p>-申請資格:在香港註冊及已營運最少12個月</p>
-                    </div>
-
-                    <div class="box hidden-left fly-time swiper-slide">
-                        <i class="fa-solid fa-chart-column"></i>
-                        <h3>
-                            百分百擔保特惠貸款
-                        </h3>
-                        <p>-最高貸款額:900萬港元</p>
-                        <p>-最長貸款擔保期:10年</p>
-                        <p>-年利率:-2.5%</p>
-                        <p>-申請資格:在香港註冊及在2022年3月31日前已營運最少3個月</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="swiper smeloan-slider">
-                <div class=" swiper-wrapper">
-
-                    <div class="box hidden-left fly-time swiper-slide">
-                        <i class="fa-solid fa-binoculars"></i>
-                        <h3>
-                            八成所需文件
-                        </h3>
-                        <p>-商業登記證及公司註冊證書(如有)</p>
-                        <p>-最近六個月主要銀行月結單</p>
-                        <p>-最近一年財務報表(如適用)</p>
-                        <p>-東主、股東及董事個人資料</p>
-                        <p>-現有貸款資料及記錄(如有)</p>
-                    </div>
-
-                    <div class="box hidden-left fly-time swiper-slide">
-                        <div class="content">
-                            <i class="fa-solid fa-sun"></i>
-                            <h3>
-                            九成所需文件
-                            </h3>
+                        <div class="box">
+                            <div class="image-box">
+                                <img src="./img/background/peru.jpg" alt="Peru">
+                            </div>
+                            <div class="content">
+                                <h3>秘魯</h3>
+                                <p>自然探險：亞馬遜雨林和安第斯山脈，冒險者的樂園。</p>
+                                <a href="./culture/culture.html#history" class="btn">了解更多</a>
+                            </div>
                         </div>
-                        <p>-商業登記證及公司註冊證書(如有)</p>
-                        <p>-最近六個月主要銀行月結單</p>
-                        <p>-最近一年財務報表(如適用)</p>
-                        <p>-東主、股東及董事個人資料</p>
-                        <p>-現有貸款資料及記錄(如有)</p>
-                    </div>
-
-                    <div class="box hidden-left fly-time swiper-slide">
-                        <div class="content">
-                            <i class="fa-solid fa-calendar"></i>
-                            <h3>
-                            百分百所需文件
-                            </h3>
+        
+                        <div class="box">
+                            <div class="image-box">
+                                <img src="./img/background/egypt.png" alt="Egypt">
+                            </div>
+                            <div class="content">
+                                <h3>埃及</h3>
+                                <p>沙漠探險：騎駱駝穿越撒哈拉沙漠，體驗獨特風情。</p>
+                                <a href="./culture/culture.html#history" class="btn">了解更多</a>
+                            </div>
                         </div>
-                        <p>-商業登記證及公司註冊證書(如有)</p>
-                        <p>-最近六個月主要銀行月結單</p>
-                        <p>-東主、股東及董事個人資料</p>
-                        <p>-強積金及出糧記錄</p>
-                        <p>-租約、釐印及租單收據或差餉單</p>
-                        <p>-營業額下跌證明</p>
-                    </div>
-                    
-                </div>
-                <div class="swiper-pagination"></div>
+                        
+                        <div class="box">
+                            <div class="image-box">
+                                <img src="./img/background/Cambodis.jpg" alt="Cambodis">
+                            </div>
+                            <div class="content">
+                                <h3>柬埔寨</h3>
+                                <p>文化探索：了解高棉文化和佛教傳統，豐富的歷史背景。</p>
+                                <a href="./culture/culture.html#history" class="btn">了解更多</a>
+                            </div>
+                        </div>
+                                      
             </div>
         </div>
+     </section>
+     <!-- * *****END of Section Two***** * -->
+
+    <!-- * *****Start of Footer***** * -->
+    <section id="footer">
+        <footer class="footer">
+            <div class="content">
+                <div >
+                <a href="#">
+                    <img class="logo" src="./img/logo/favicon.png" alt="This is the company logo">
+                </a>   
+                <h3 >天天旅遊 Daily Travel</h3>             
+                </div>
+                <p style="color: #fff; font-size: 3.4vmin; font-weight: 800; margin: 10px 0 10px  0; letter-spacing: 5px;">「從這裡出發，探索世界的每一個驚喜角落!」</p>
+                <div class="">
+                    <p class="callus" style="font-size: 3vmin; font-weight: 600; letter-spacing: 3px;  text-decoration: underline;">聯絡我們:</p>
+                    <div>
+                    <a href="https://project-970.pages.dev/travel%20info/travelinfo#contact"><i class='bx bxl-facebook-circle bx-tada' style="color: rgb(0, 106, 255);"></i></a>
+                    <a href="https://project-970.pages.dev/travel%20info/travelinfo#contact"><i class='bx bxl-instagram-alt bx-tada' style="color: rgb(255, 0, 200);"></i></a>
+                    <a href="https://project-970.pages.dev/travel%20info/travelinfo#contact"><i class='bx bxl-youtube bx-tada' style="color: rgb(255, 0, 0);"></i></a>
+                    <a href="https://project-970.pages.dev/travel%20info/travelinfo#contact"><i class='bx bxl-twitter bx-tada' style="color: rgb(7, 187, 203);"></i></a>
+                    <hr style="width: 35%; height: 2px; background: #fff; margin: 0 auto;">
+                    </div>
+                    <div style="display: inline-flex; align-items: center; justify-content: space-around; margin-bottom: 0.5rem;">
+                    <a href="./policy/policy.html" style="font-size: 3vmin;">私隱政策</a>
+                    <p style="font-size: 3vmin;">&copy; 2024 All Rights Reserved</p>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </section>
-    <hr>
-    <!--***************End smeloan***************-->
-    <!--***************Start ploan***************-->
-    <section class="ploan section-area" id="ploan">
-        <div class="heading">
-            <h2 data-text="私人貸款比較">私人貸款比較</h2>
-            <div class="underline"></div>
-        </div>
+    <!-- * *****END of Footer***** * -->
 
-        <div class="row">
-            <div class="swiper ploan-slider">
-                <div class=" swiper-wrapper">
-
-                    <div class="box hidden-up fly-time swiper-slide">
-                        <div class="card">
-                            <input type="checkbox" name="">
-                            <div class="toggle">+</div>
-                            <div class="imgBX">
-                                <img src="./img/ploan/publicfinance.jpg" alt="">
-                                <div class="content">
-                                <h3>大眾財務</h3>
-                                <p>東主貸款,生意周轉更輕鬆</p>
-                                <p>每月平息抵至0.18%</p>
-                                <p>特快批核</p>
-                                <button><a href="#" class="btn">申請咨詢</a></button>
-                                </div>        
-                            </div>
-                            <div class="details">
-                                <h3>UA亞洲聯合財務</h3>
-                                <p>免文件</p>
-                                <p>月平息0.07%</p>
-                                <p>最低實際年利率 1.68%</p>
-                                <p>總還款額低至 $ 410,296</p>
-                                <p>提供特大貸款額高達HK$1,000,000,專享特大周轉額</p>
-                                <p>貸款額高達HK$500,000</p>
-                                <p>還款期長達60個月</p>
-                                <P>隨時隨地網上申請，全程無須露面</P>                        
-                            </div>       
-                        </div>
-                    </div>
-
-                    <div class="box hidden-up fly-time swiper-slide">
-                        <div class="card">
-                            <input type="checkbox" name="">
-                            <div class="toggle">+</div>
-                            <div class="imgBX">
-                                <img src="./img/ploan/uafinance.jpg" alt="">
-                                <div class="content">
-                                <h3>大眾財務</h3>
-                                <p>東主貸款,生意周轉更輕鬆</p>
-                                <p>每月平息抵至0.18%</p>
-                                <p>特快批核</p>
-                                <button><a href="#" class="btn">申請咨詢</a></button>
-                                </div>
-                            </div>
-                            <div class="details">
-                                <h3>大眾財務</h3>
-                                <p>每月平息抵至0.18%</p>
-                                <p>比一般銀行信用卡結欠還款,節省利息高達95%</p>
-                                <p>個人化利率[智慳錢]</p>
-                                <p>特快批核</p>
-                                <p>貸款額高達HK$600,000</p>
-                                <p>東主貸款,生意周轉更輕鬆</p>
-                            </div>       
-                        </div>
-                    </div>
-
-                    <div class="box hidden-up fly-time swiper-slide">
-                        <div class="card">
-                            <input type="checkbox" name="">
-                            <div class="toggle">+</div>
-                            <div class="imgBX">
-                                <img src="./img/ploan/okfinance.png" alt="">
-                                <div class="content">
-                                <h3>大眾財務</h3>
-                                <p>東主貸款,生意周轉更輕鬆</p>
-                                <p>每月平息抵至0.18%</p>
-                                <p>特快批核</p>
-                                <button><a href="#" class="btn">申請咨詢</a></button>
-                                </div>
-                            </div>
-                            <div class="details">
-                                <h3>安信信貸</h3>
-                                <p>毋須入息證明</p>
-                                <p>還款期長達72個月</p>
-                                <p>免手續費，免提前還款手續費</p>
-                                <p>貸款額高達HK$800,000</p>
-                                <p>彈性利率,度身訂造</p>
-                                <p>大額貸款,集中還款慳利息</p>
-                            </div>       
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="swiper ploan-slider">
-                <div class=" swiper-wrapper">        
-                    <div class="box hidden-up fly-time swiper-slide">
-                        <div class="card">
-                            <input type="checkbox" name="">
-                            <div class="toggle">+</div>
-                            <div class="imgBX">
-                                <img src="./img/ploan/primecredit.png" alt="">
-                                <div class="content">
-                                <h3>大眾財務</h3>
-                                <p>東主貸款,生意周轉更輕鬆</p>
-                                <p>每月平息抵至0.18%</p>
-                                <p>特快批核</p>
-                                <button><a href="#" class="btn">申請咨詢</a></button>
-                                </div>
-                            </div>
-                            <div class="details">
-                                <h3>OK財務</h3>
-                                <p>貸款額高達月薪21倍 或 HK$800,000</p>
-                                <p>還款期長達72個月</p>
-                            </div>       
-                        </div>
-                    </div>
-
-                    <div class="box hidden-up fly-time swiper-slide">
-                        <div class="card">
-                            <input type="checkbox" name="">
-                            <div class="toggle">+</div>
-                            <div class="imgBX">
-                                <img src="./img/ploan/dahsingBank.png" alt="">
-                                <div class="content">
-                                <h3>大眾財務</h3>
-                                <p>東主貸款,生意周轉更輕鬆</p>
-                                <p>每月平息抵至0.18%</p>
-                                <p>特快批核</p>
-                                <button><a href="#" class="btn">申請咨詢</a></button>
-                                </div>
-                            </div>
-                            <div class="details">
-                                <h3>Fanince Company</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit obcaecati tempore repudiandae, 
-                                veniam voluptates itaque architecto omnis et eum praesentium blanditiis doloribus quam beatae 
-                                perferendis facere quaerat. Magni, quisquam accusantium!</p>
-                            </div>       
-                        </div>
-                    </div>
-
-                    <div class="box hidden-up fly-time swiper-slide">
-                        <div class="card">
-                            <input type="checkbox" name="">
-                            <div class="toggle">+</div>
-                            <div class="imgBX">
-                                <img src="./img/ploan/welend.jpeg" alt="">
-                                <div class="content">
-                                <h3>大眾財務</h3>
-                                <p>東主貸款,生意周轉更輕鬆</p>
-                                <p>每月平息抵至0.18%</p>
-                                <p>特快批核</p>
-                                <button><a href="#" class="btn">申請咨詢</a></button>
-                                </div>
-                            </div>
-                            <div class="details">
-                                <h3>Fanince Company</h3>
-                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit obcaecati tempore repudiandae, 
-                                veniam voluptates itaque architecto omnis et eum praesentium blanditiis doloribus quam beatae 
-                                perferendis facere quaerat. Magni, quisquam accusantium!</p>
-                            </div>       
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-            </div>
-        </div>    
-    </section>
-    <hr>
-    <!--***************End ploan***************-->
-    <!--***************Start team***************-->
-    <section class="team section-area" id="team">
-        <div class="heading">
-            <h2 data-text="業主貸款">業主貸款</h2>
-            <div class="underline"></div>
-        </div>
-
-        <div class="row ">
-            <div class="swiper team-slider">
-                <div class="swiper-wrapper">
-            
-                    <div class=" box ">
-                        <div class="content ">
-                            <h3>業主貸款是什麼？</h3>
-                            <p>「業主貸款」是專為擁有物業的人士而設的無抵押私人貸款，毋須抵押物業都能借貸。</p>
-                            
-                        </div>
-                        <div class="image">
-                            <img src="./img/testimonials/testimonials-1.jpg" alt="image" class="hidden fly-time">
-                        </div>
-                    </div>
-            
-                    <div class=" box  ">
-                        <div class="content ">
-                            <h3>業主貸款與傳統銀行按揭及加按套現的分別</h3>
-                            <p>一般傳統銀行按揭需要在土地註冊處（簡稱田土廳）登記。而如果借的是業主貸款，就可以不必到田土廳登記。</p>
-                            
-                        </div>
-                        <div class="image">
-                            <img src="./img/testimonials/testimonials-2.jpg" alt="image" class="hidden fly-time">
-                        </div>
-                    </div>
-            
-                    <!-- <div class="swiper-slide box ">
-                        <div class="content ">
-                            <h3>業主貸款對中小業主有什麼好處？</h3>
-                            <p>公、居屋業主借業主貸款的原因，是因為他們要用手上物業作加按是非常麻煩複雜的一件事。</p>
-                            
-                        </div>
-                        <div class="image">
-                            <img src="img/testimonials/testimonials-3.jpg" alt="image" class="hidden fly-time">
-                        </div>
-                    </div>
-            
-                    <div class="swiper-slide box ">
-                        <div class="content  ">
-                            <h3>申請物業貸款需要哪些資格？</h3>
-                            <p>必須是業主，無論物業是否供完都可以申請。</p>
-                            
-                        </div>
-                        <div class="image">
-                            <img src="img/testimonials/testimonials-4.jpg" alt="image" class="hidden fly-time">
-                        </div>
-                    </div>
-            
-                    <div class="swiper-slide box">
-                        <div class="content ">
-                            <h3>jon</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id doloremque molestiae</p>
-                            
-                        </div>
-                        <div class="image">
-                            <img src="img/testimonials/testimonials-5.jpg" alt="image" class="hidden fly-time">
-                        </div> -->
-
-                    </div>
-
-                </div>
-                <div class="swiper-button-next"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-pagination"></div> 
-                    
-            </div>
-        </div>
-    </section>
-    <hr>
-    <!--***************End team***************-->
-
-    <!-- .blog  -->
-    <!-- <section class="blog section-area" id="blog">
-        <div class="heading">
-            <h2 data-text="最新消息">最新消息</h2>
-            <div class="underline"></div>
-        </div>
-        <div class="row">
-            <div class="box">
-                <div class="image-box">
-                <img src="img/blog/1.jpg" alt="image" class="hidden-rotate fly-time">
-                </div>
-                <div class="content">
-                <h3>Assumenda repud eum veniam</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti natus assumenda excepturi ipsam consequuntur officia possimus magni, saepe tempore, repellendus in recusandae quos beatae corrupti placeat est architecto vero aut.</p>
-                <a href="#" class="btn">read more</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image-box">
-                <img src="img/blog/2.jpg" alt="image" class="hidden-rotate fly-time">
-                </div>
-                <div class="content">
-                <h3>Assumenda repud eum veniam</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti natus assumenda excepturi ipsam consequuntur officia possimus magni, saepe tempore, repellendus in recusandae quos beatae corrupti placeat est architecto vero aut.</p>
-                <a href="#" class="btn">read more</a>
-                </div>
-            </div>
-
-            <div class="box">
-                <div class="image-box">
-                <img src="img/blog/3.jpg" alt="image" class="hidden-rotate fly-time">
-                </div>
-                <div class="content">
-                <h3>Assumenda repud eum veniam</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti natus assumenda excepturi ipsam consequuntur officia possimus magni, saepe tempore, repellendus in recusandae quos beatae corrupti placeat est architecto vero aut.</p>
-                <a href="#" class="btn">read more</a>
-                </div>
-            </div>
-        </div>
-         -->
-        <!-- table test -->
-        <!-- <div>
-            <table style="width:100%">
-                <tr>
-                  <th>Company</th>
-                  <th>Contact</th>
-                  <th>Country</th>
-                </tr>
-                <tr>
-                  <td>Alfreds Futterkiste</td>
-                  <td>Maria Anders</td>
-                  <td>Germany</td>
-                </tr>
-                <tr>
-                  <td>Centro comercial Moctezuma</td>
-                  <td>Francisco Chang</td>
-                  <td>Mexico</td>
-                </tr>
-              </table>
-        </div>
-    </section>
-    <hr> -->
-    <!-- blog  -->
-
-    <!--***************Start footer***************-->
-    <section>
-    <footer class="footer">
-        <div class="content">
-            <h3>Business</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut alias, deleniti enim eos numquam</p>
-            <div class="shar">
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-instagram"></i>
-                <i class="fa-brands fa-youtube"></i>
-                <i class="fa-brands fa-twitter"></i>
-            </div>
-        </div>
-        <div class="progress-area">
-          <div class="progress-bar">
-             <div class="progress-bar-inner">0%</div>
-          </div>
-        </div>
-    </footer>
-    </section>
-    <!--***************End footer***************-->
-    <!-- whatsapp -->
+    <!-- * *****START of Whatsapp & ScrollTop***** * -->
     <section>
     <div class="whatsapp">
-        <a href="https://wa.me/64754756" class="whatsapp-btn"><i class="fa-brands fa-whatsapp fa-beat-fade fa-lg"></i></a>
-        <span>Contant Us</span>
+        <a href="https://wa.me/62570155" class="whatsapp-btn"><i class='bx bxl-whatsapp bx-burst'></i></a>
+        <span>歡迎查詢</span>
+    </div>
+
+
+    <div class="scroll-to-top" style="bottom: 7.5%;">
+        <span>
+            <svg width="24" height="24" viewBox="0 0 48 48" fill="none">
+                <path d="M9 8L39 8" stroke="#212121" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M24 43L24 16" stroke="#212121" stroke-width="3.6" stroke-linecap="round"></path>
+                <path d="M12 26L24 15L30 20.5L36 26" stroke="#212121" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"></path>
+            </svg>
+        </span>
     </div>
     </section>
-    <!-- /whatsapp -->
-    
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
-    <script src="./js/script.js"></script>
-    <script src="./js/myswiper.js"></script>
-    <script src="./js/scrollanimation.js"></script>
-    <script src="./js/progressbar.js"></script>
-    <script src="./js/form_submit.js"></script>
+    <!-- * *****END of Whatsapp & ScrollTop***** * -->
+
+
+
+    <script src="./script.js"></script>
+    <script src="./all javascript/scroll-to-top.js"></script>
 </body>
 </html>
